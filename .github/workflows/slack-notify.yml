@@ -8,7 +8,7 @@ jobs:
         run: exit 1
       - name: Slack notification
         if: failure()
-        uses: rtCamp/action-slack-notify@2
+        uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_COLOR: danger
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
